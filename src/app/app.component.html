@@ -1,0 +1,40 @@
+<md-sidenav-layout>
+  <md-sidenav mode="side" opened="true">
+    <h2 class="side-menu">Side menu</h2>
+    <md-grid-list cols="1" [style.background]="'ACCENT'" rowHeight="50px">
+      <md-grid-tile>
+        <md-card routerLinkActive="active">
+          <a routerLink="/wot">
+          wot
+                  </a>
+        </md-card>
+
+      </md-grid-tile>
+      <md-grid-tile>
+          <md-card routerLinkActive="active">
+            <a routerLink="/">
+          any
+                  </a>
+          </md-card>
+
+      </md-grid-tile>
+      <md-grid-tile>
+
+        <!--<md-card routerLinkActive="active">
+          <a routerLink="">
+          any
+                  </a>
+        </md-card>-->
+
+
+      </md-grid-tile>
+    </md-grid-list>
+
+  </md-sidenav>
+  <header>
+    <div class="my-content">{{title}}</div>
+    <div *ngFor="let item of items | async">nickname:{{item.nickname}},id{{item.account_id}}</div>
+  </header>
+  <router-outlet>
+  </router-outlet>
+</md-sidenav-layout>

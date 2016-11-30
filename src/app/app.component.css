@@ -1,0 +1,55 @@
+.my-layout {
+  width: 500px;
+  height: 300px;
+}
+
+.my-layout md-sidenav {
+  max-width: 200px;
+}
+
+.my-layout .md-sidenav-content,
+.my-layout md-sidenav {
+  display: flex;
+}
+
+.my-scrolling-content {
+  overflow: auto;
+}
+
+button.my-fab {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+md-sidenav {
+  width: 200px;
+  background: #222;
+}
+
+.side-menu {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+md-card {
+    width: 65%;
+    
+}
+
+md-card:hover ,md-card.active{
+    background-color: #337ab7;
+    border-color: #337ab7;   
+}
+md-card:hover > a,md-card.active a {
+    color: #fff;
+}
+
+md-card > a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #555;
+}
